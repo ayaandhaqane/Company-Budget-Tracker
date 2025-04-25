@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import supabase from '../lib/Supabase';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 const SignUpPage = () => {
   const [email, setEmail] = useState('');
@@ -66,7 +68,8 @@ const SignUpPage = () => {
         </form>
 
         <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">Already have an account? <a href="/signin" className="text-green-500 hover:underline">Sign In</a></p>
+          <p className="text-sm text-gray-600">Already have an account? <Link to="/signin" className="text-green-500 hover:underline">Sign In</Link>
+          </p>
         </div>
       </div>
     </div>
