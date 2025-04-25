@@ -22,8 +22,8 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/contact" element={<Contact/>} />
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
           
           {/* Protected Route */}
           <Route
