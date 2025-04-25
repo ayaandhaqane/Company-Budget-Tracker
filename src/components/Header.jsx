@@ -16,7 +16,7 @@ function Header() {
               className="h-30"
             />
           </div>
-
+          
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
             <Link to="/" className="text-base text-white transition-all duration-200 hover:text-opacity-80">Home</Link>

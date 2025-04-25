@@ -1,12 +1,45 @@
-# React + Vite
+# Budget Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful budget tracker application that allows company to manage their revenue and expenses efficiently. The application offers features like tracking transactions, viewing statistics, and visualizing financial data with charts.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Track and manage revenue and expenses.
+- View the total revenue, total expenses, and net income.
+- Visualize revenue vs. expenses using donut charts.
+- Display revenue by month using bar charts.
+- View the latest transactions with pagination and search functionality.
+- User-friendly interface built with React and TailwindCSS.
 
-## Expanding the ESLint configuration
+## Technologies
+This project is built using the following technologies:
+- **Frontend**: React, TailwindCSS, Chart.js
+- **Backend**: Supabase (Database as a Service)
+- **Charting Library**: Chart.js (for visualizing data)
+- **State Management**: React's `useState` and `useEffect` hooks
+- **Deployment**: You can deploy this app using services like Netlify, Vercel, or Heroku.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/budget-tracker.git
+   
+## Set up Supabase:
+
+  1. Go to Supabase and create a new project.
+
+  2. Create two tables: expenses and revenue in your Supabase database.
+
+  3. Insert sample data into both tables to start using the application.
+
+  4. Create a .env file in the root directory of your project and add your Supabase credentials:
+     -  REACT_APP_SUPABASE_URL=your-supabase-url
+     -  REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
